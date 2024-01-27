@@ -1,0 +1,229 @@
+body {
+    background-color: var(--txt-base-dark);
+    /* font-family: var(--font-dm-sans); */
+}
+
+/* Sidebar */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.75rem; /* 12px */
+    width: 18.75rem; /* 300px */
+}
+
+.sidebar-nav .logo {
+    background-color: var(--bg-sidebar);
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.sidebar-nav .logo img {
+    width: 5rem; /* 80px */
+}
+
+.sidebar-nav {
+    background-color: var(--bg-sidebar);
+    border-radius: 0.5rem; /* 8px */
+    cursor: pointer;
+}
+
+.sidebar-menu nav ul {
+    list-style: none;
+    margin-top: 1.25rem; /* 20px */
+    padding: 0 1.25rem 0.625rem 1.25rem; /* 0 20px 10px 20px */
+}
+
+.sidebar-menu ul li {
+    padding: 0.625rem 0;
+}
+
+.sidebar-menu .sidebar-nav ul li a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+}
+
+.sidebar-menu nav ul li .fa-solid {
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
+    /* font-weight: 300; */
+}
+
+.sidebar-menu nav ul li a:hover {
+    color: var(--txt-base-light);
+}
+
+.library {
+    background-color: var(--bg-sidebar);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.25rem 0.5rem;
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+}
+
+.library .library-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library-button {
+    display: flex;
+    margin-right: 0.625rem;
+    color: var(--font-color);
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 1.25rem 0.625rem;
+}
+
+.library .library-button .fa-solid {
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
+    font-weight: 300;
+    padding-right: 0.5rem;
+}
+
+.library .library-content .fa-plus {
+    font-size: 1.063rem;
+    margin: 1.5rem 0.625rem; 
+}
+
+.section-playlist,
+.section-podcast {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem;
+    min-block-size: 2.5rem;
+    background-color: var(--bg-sidebar-section);
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.section-playlist .section-playlist-content,
+.section-podcast .section-podcast-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist-content .text, 
+.section-podcast-content .text {
+    padding-bottom: 0.875rem;
+    color: var(--txt-base-light);
+}
+
+.section-playlist-content .title,
+.section-podcast-content .title {
+    font-weight: 700;
+}
+
+.section-playlist .subtitle,
+.section-podcast .subtitle {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.section-playlist .section-playlist-button,
+.section-podcast .section-podcast-button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--txt-base-light);
+    color: var(--txt-base-dark);
+    border-radius: 1.25rem;
+    font-size: 0.75rem;
+    text-decoration: none;
+    text-transform: none;
+    padding: 0.625rem;
+    margin-top: 0.75rem;
+    border: 0;
+    width: 7.063rem;
+}
+
+.sidebar-menu .cookies {
+    margin: 1.563rem 1.25rem;
+}
+
+.sidebar-menu .cookies a {
+    color: var(--font-color);
+    font-weight: 500;
+    font-size: 0.625rem;
+    text-decoration: none;
+}
+
+.sidebar-menu .cookies a:hover {
+    text-decoration: underline;
+}
+
+.languages .languages-button {
+    align-items: center;
+    background-color: transparent;
+    border: 0.063rem solid rgb(135, 135, 135);
+    color: var(--txt-base-light);
+    cursor: pointer;
+    font-weight: bold;
+    width: 10.625rem; /* 170px */
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+}
+
+/* Footer */
+.disclaimer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(174, 40, 150), rgb(80, 155, 245));
+    padding: 0.928rem 2.5rem;
+    font-family: var(--font-dm-sans);
+}
+
+.disclaimer .text {
+    flex-shrink: 0;
+}
+
+.disclaimer .disclaimer-title {
+    color: var(--txt-base-light);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.disclaimer .disclaimer-subtitle {
+    color: var(--txt-base-light);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.disclaimer button {
+    background-color: var(--txt-base-light);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.875rem 1.875rem;
+    border: 0;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    /* font-family: var(--font-dm-sans); */
+}
